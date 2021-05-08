@@ -1,0 +1,39 @@
+:root{
+    --headerBackground: #87a6ae;
+    --headerContrast: #0b0f2e;
+    --mainBackground: #aca4bc;
+    --mainText: #56738d;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    display: block;
+    background: var(--headerBackground);
+    color: var(--headerContrast);
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    font-size: 2rem;
+}
+
+header nav{
+    display: flex;
+    background: var(--headerContrast);
+    justify-content: center;
+    padding: 20x;
+}
+
+header nav a{
+    color: var(--headerBackground);
+    text-decoration: none;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+img{
+    max-width: 100vw;
+}
