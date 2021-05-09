@@ -21,10 +21,13 @@ header h1{
 }
 
 header nav{
-    display: flex;
     background: var(--headerContrast);
-    justify-content: center;
-    padding: 20x;
+}
+
+header nav div{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
 }
 
 header nav a{
