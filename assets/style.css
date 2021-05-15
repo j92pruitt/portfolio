@@ -105,6 +105,7 @@ section h2{
     padding: 7% 1% 3%;
     margin: 2.5%;
     border: 6px solid var(--headerBackground);
+    object-fit: fill;
 }
 
 .project-link div{
@@ -124,11 +125,27 @@ h3{
 
 #work p{
     font-size: 1rem;
+    font-weight: bold;
 }
 
 #surf-report{
     background-image: url("./images/surf-report.jpg");
-    object-fit: fill;
+}
+
+#led-wall{
+    background-image: url("./images/led-wall.jpeg");
+}
+
+#calculator{
+    background-image: url("./images/calculator.jpg");
+}
+
+#pastel-puzzels{
+    background-image: url("./images/pastel-puzzle.jpg");
+}
+
+#landing-page{
+    background-image: url("./images/landing-page.png");
 }
 
 @media screen and (min-width: 577px) {
