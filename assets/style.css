@@ -130,6 +130,26 @@ section h2{
     header a{
         font-size: 1.25rem;
     }
+
+    section{
+        flex-direction: row;
+    }
+
+    h2{
+        text-align: end;
+        min-width: 15vw;
+    }
+
+    .content{
+        padding-left: 30px;
+    }
+
+    .content::before{
+        bottom: 0%;
+        height: 100%;
+        width: 5px;
+        left: 10px;
+    }
 }
 
 @media screen and (min-width: 1300px) {
