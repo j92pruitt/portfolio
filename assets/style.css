@@ -93,6 +93,21 @@ section h2{
     bottom: 102.5%;
 }
 
+#work a{
+    text-decoration: none;
+}
+
+.project-link{
+    display:block;
+    background-color: red;
+    width: 91.5%;
+    margin:auto;
+    padding: 1%;
+    line-height: .5rem;
+    margin: 2.5%;
+    border: 6px solid var(--headerBackground);
+}
+
 @media screen and (min-width: 577px) {
     header a{
         font-size: 1.9rem;
