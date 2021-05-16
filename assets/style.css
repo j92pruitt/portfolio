@@ -110,6 +110,7 @@ section h2{
     border: 6px solid var(--headerBackground);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .project-link div{
@@ -150,6 +151,18 @@ h3{
 
 #landing-page{
     background-image: url("./images/landing-page.png");
+}
+
+.project-link:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: background .3s linear;
 }
 
 #contact-me ul{
