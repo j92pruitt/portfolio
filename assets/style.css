@@ -152,6 +152,18 @@ h3{
     background-image: url("./images/landing-page.png");
 }
 
+#contact-me ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
 @media screen and (min-width: 577px) {
     header a{
         font-size: 1.9rem;
