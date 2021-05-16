@@ -110,6 +110,7 @@ section h2{
     border: 6px solid var(--headerBackground);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .project-link div{
@@ -150,6 +151,40 @@ h3{
 
 #landing-page{
     background-image: url("./images/landing-page.png");
+}
+
+.project-link:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: background .3s linear;
+}
+
+#contact-me ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 4rem;
+    position: relative;
+}
+
+li a::before{
+    width: 100%;
+    height: 5px;
+    background-color: var(--mainText);
+    content: "";
+    position: absolute;
+    top: 102.5%
 }
 
 @media screen and (min-width: 577px) {
@@ -228,6 +263,12 @@ h3{
     #big{
         width: 100%;
         margin: 0 auto 10px;
+    }
+
+    #contact-me ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
