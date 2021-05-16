@@ -1,3 +1,4 @@
+/* Main colors for website */
 :root{
     --headerBackground: #87a6ae;
     --headerContrast: #0b0f2e;
@@ -5,6 +6,7 @@
     --mainText: #233768;
 }
 
+/* Basic full page styling */
 body{
     margin: 0;
     box-sizing: border-box;
@@ -16,6 +18,7 @@ header{
     flex-direction: column;
 }
 
+/* Title Name styles */
 .title{
     background-color: var(--headerBackground);
     display: flex;
@@ -28,6 +31,7 @@ h1{
     font-size: 3.5rem;
 }
 
+/* Nav Link styles */
 .links{
     background-color: var(--headerContrast);
     min-height: 90px;
@@ -49,6 +53,7 @@ header a{
     position: relative;
 }
 
+/* Bar under nav links */
 header a::before{
     width: 100%;
     height: 15%;
@@ -58,11 +63,13 @@ header a::before{
     top: 100%
 }
 
+/* Banner img */
 img{
     max-width: 100vw;
     object-fit: cover;
 }
 
+/* Main section styles */
 main{
     color: var(--mainText);
     font-size: 1.25rem;
@@ -85,6 +92,7 @@ section h2{
     position: relative;
 }
 
+/* Bars seperating section headers from section content */
 .content::before{
     width: 100%;
     height: 5px;
@@ -94,6 +102,7 @@ section h2{
     bottom: 102.5%;
 }
 
+/* Project link styles */
 #work a{
     text-decoration: none;
 }
@@ -104,6 +113,7 @@ section h2{
     margin: 0 auto 10px;
 }
 
+/* Project link box */
 .project-link{
     background-color: red;
     padding: 7% 1% 3%;
@@ -113,6 +123,8 @@ section h2{
     position: relative;
 }
 
+
+/* Project description box */
 .project-link div{
     background-color: var(--headerBackground);
     display: inline-block;
@@ -133,6 +145,7 @@ h3{
     font-weight: bold;
 }
 
+/* Background images for project links */
 #surf-report{
     background-image: url("./images/surf-report.jpg");
 }
@@ -153,6 +166,7 @@ h3{
     background-image: url("./images/landing-page.png");
 }
 
+/* Hover tint effect for project links */
 .project-link:hover::before{
     content: "";
     display: block;
@@ -165,6 +179,7 @@ h3{
     transition: background .3s linear;
 }
 
+/* Contact Me styles */
 #contact-me ul{
     list-style: none;
     display: flex;
@@ -187,12 +202,15 @@ li a::before{
     top: 102.5%
 }
 
+/* Responsive styling for various screen sizes */
+
 @media screen and (min-width: 577px) {
     header a{
         font-size: 1.9rem;
     }
 
 @media screen and (min-width: 993px) {
+    /* Header adjustments for larger screens. Elements are made larger. Title and Nav elements are moved to same row */
     header{
         flex-direction: row;
         justify-content: space-between;
@@ -226,6 +244,7 @@ li a::before{
         font-size: 1.25rem;
     }
 
+    /* Section Header and Content styled side-by-side */
     section{
         flex-direction: row;
     }
@@ -250,6 +269,7 @@ li a::before{
         left: 10px;
     }
 
+    /* Project links moved to 2 per line except for first */
     .link-container{
         width: calc(50% - 5px);
         margin-left: 0;
@@ -260,11 +280,13 @@ li a::before{
         margin: 0px;
     }
 
+    /* First project link takes entire line */
     #big{
         width: 100%;
         margin: 0 auto 10px;
     }
 
+    /* Contact Me links oriented horizontally */
     #contact-me ul{
         width: 100%;
         flex-direction: row;
@@ -273,6 +295,7 @@ li a::before{
 }
 
 @media screen and (min-width: 1300px) {
+    /* Element size increases for full size viewing */
     header{
         min-height: 130px;
     }
