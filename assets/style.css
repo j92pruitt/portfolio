@@ -1,4 +1,5 @@
 figure {
     border-radius: 12px;
     overflow: hidden;
+    border: 1px solid black;
 }
