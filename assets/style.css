@@ -15,6 +15,15 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+figcaption:hover {
+    opacity: 1;
 }
 
 figcaption a {
