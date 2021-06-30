@@ -29,3 +29,8 @@ figcaption:hover {
 figcaption a {
     margin: 0 auto;
 }
+
+.is-primary {
+    background-color: #68cdfe;
+    color: white;
+}
