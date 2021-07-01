@@ -34,3 +34,7 @@ figcaption a {
     background-color: #68cdfe;
     color: white;
 }
+
+#about-me h3 {
+    line-height: 1.5;
+}
